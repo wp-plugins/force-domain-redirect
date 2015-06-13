@@ -2,7 +2,8 @@
 Contributors: nimbusdigital
 Tags: domain,redirect,301,url,uri,rewrite
 Requires at least: 3.0
-Tested up to: 3.9.2
+Tested up to: 4.2.2
+Stable tag: trunk
 License: GP2
 
 Forces your Wordpress site to load on the domain registered in the WP admin.
@@ -20,4 +21,5 @@ In theory htaccess should do this, but in my case it didn’t. Perhaps because I
 Copy the plugin file to your Wordpress plugins directory. That\'s it. No configuration necessary... just make sure the domain you want to force is listed under SETTINGS > GENERAL > WordPress Address (URL)
 
 == Changelog ==
+0.2 Update to handle https
 0.1 Initial version. Seems to do what\'s needed.

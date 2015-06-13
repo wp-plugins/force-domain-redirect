@@ -3,7 +3,7 @@
  * Plugin Name: Force Domain Redirect
  * Plugin URI: http://nimbus.agency
  * Description: Forces the use of the main WP domain
- * Version: 0.1
+ * Version: 0.2
  * Author: Mark Williams
  * Author URI: http://nimbus.agency
  * License: GPL2
@@ -30,7 +30,7 @@
 		$uri=$_SERVER['REQUEST_URI'];
 		$domain=$_SERVER['HTTP_HOST'];
 		$wpDomain=get_site_url();
-		if($wpDomain=="http://".$domain){
+		if($wpDomain=="http://".$domain || $wpDomain=="https://".$domain){
 			//echo "You are at the correct domain";
 		} else {
 			Header( "HTTP/1.1 301 Moved Permanently" );
